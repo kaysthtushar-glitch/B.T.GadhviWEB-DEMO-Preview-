@@ -56,7 +56,7 @@ function App() {
         <div className="max-w-[1280px] mx-auto px-6 h-[80px] flex items-center justify-between">
           <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3 text-left">
             {/* IMAGE 1 LOCATION: LOGO */}
-            <img src={LOGO_IMAGE} alt="Gadhavi Legal Associates" className="h-[50px] w-auto object-contain" />
+            <img src={image/logo.png} alt="Gadhavi Legal Associates" className="h-[50px] w-auto object-contain" />
             <span className="flex flex-col leading-tight">
               <span className="text-[15px] font-black uppercase text-[#0A1931]">GADHAVI LEGAL</span>
               <span className="text-[15px] font-black uppercase text-[#0A1931]">ASSOCIATES</span>
@@ -110,14 +110,14 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* IMAGE 2 LOCATION: PARTNER 1 */}
             <div className="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center">
-              <img src={PARTNER_1_IMG} alt="Bhupatdan Gadhavi" className="w-full h-56 object-cover rounded-lg mb-4 object-top" />
+              <img src={image/bhupatdan.jpg} alt="Bhupatdan Gadhavi" className="w-full h-56 object-cover rounded-lg mb-4 object-top" />
               <h4 className="font-bold text-[#0A1931]">Bhupatdan Gadhavi</h4>
               <p className="text-xs text-[#D4AF37] font-semibold mt-1">Managing Partner (G/81/2004)</p>
             </div>
 
             {/* IMAGE 3 LOCATION: PARTNER 2 */}
             <div className="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center">
-              <img src={PARTNER_2_IMG} alt="Ila Gadhavi" className="w-full h-56 object-cover rounded-lg mb-4 object-top" />
+              <img src={image/ila.jpg} alt="Ila Gadhavi" className="w-full h-56 object-cover rounded-lg mb-4 object-top" />
               <h4 className="font-bold text-[#0A1931]">Ila Gadhavi</h4>
               <p className="text-xs text-[#D4AF37] font-semibold mt-1">Partner & Banking Expert</p>
             </div>
