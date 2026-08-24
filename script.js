@@ -5,9 +5,9 @@ import { createRoot } from "https://esm.sh/react-dom@18/client";
 // IMAGE PATHS FOR GITHUB REPO
 // (Apni images ko 'images' folder mein daal kar yahan naam badlein)
 // ==========================================================
-const LOGO_IMAGE = "images/logo.png";          // Line 12
-const PARTNER_1_IMG = "images/bhupatdan.jpg";  // Line 15 (Bhupatdan Gadhavi)
-const PARTNER_2_IMG = "images/ila.jpg";        // Line 18 (Ila Gadhavi)
+const LOGO_IMAGE = "image/logo.png";          // Line 12
+const PARTNER_1_IMG = "image/bhupatdan.jpg";  // Line 15 (Bhupatdan Gadhavi)
+const PARTNER_2_IMG = "image/ila.jpg";        // Line 18 (Ila Gadhavi)
 
 const Se = [
   { id: "hero", label: "PAGE 1: HERO", short: "Hero" },
