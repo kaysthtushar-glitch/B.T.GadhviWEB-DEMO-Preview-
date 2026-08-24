@@ -2,23 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gadhavi Legal Associates LLP</title>
   
-  <!-- Tailwind CSS CDN (GitHub Pages ke liye easy setup) -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- React & ReactDOM CDN for GitHub Pages -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 96px; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .grain::before {
+      content:""; position:absolute; inset:0; pointer-events:none; opacity:0.035;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+  </style>
 </head>
-<body>  
-  <div id="root"></div>    
+<body class="bg-[#FAFBFC] text-[#0A1931] antialiased selection:bg-[#0A1931] selection:text-white">
 
-  <!-- Main JavaScript / React Logic -->
-  <script src="script.js" type="module"></script>
+  <!-- TOP NOTIFICATION / BAR -->
+  <div class="fixed top-0 left-0 right-0 z-[110] h-7 bg-[#0A1931] border-b border-white/10 text-white flex items-center justify-between px-4 sm:px-6 text-[11px]">
+    <span class="bg-[#D4AF37] text-[#0A1931] px-2 py-0.5 rounded font-extrabold tracking-widest uppercase">EST. 2004</span>
+    <span class="text-[#D4AF37] tracking-wider uppercase font-semibold">Ahmedabad, Gujarat</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-7 z-50 bg-white/85 backdrop-blur-md border-b border-[#0A1931]/10 shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-6 h-[80px] flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <!-- IMAGE 1: Yahan apni logo image ka sahi path dein -->
+        <img src="images/logo.png" alt="Gadhavi Legal Associates" class="h-[50px] w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';">
+        <span id="fallback-logo" style="display:none;" class="text-xl font-black text-[#0A1931]">GLA LLP</span>
+        <div class="flex flex-col leading-tight">
+          <span class="text-[15px] font-black uppercase text-[#0A1931]">GADHAVI LEGAL</span>
+          <span class="text-[15px] font-black uppercase text-[#0A1931]">ASSOCIATES</span>
+        </div>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-[13px] font-semibold text-[#0A1931]/70">
+        <a href="#hero" class="hover:text-[#0A1931]">Home</a>
+        <a href="#about" class="hover:text-[#0A1931]">About Firm</a>
+        <a href="#practice" class="hover:text-[#0A1931]">Practice Areas</a>
+        <a href="#judicial" class="hover:text-[#0A1931]">Forums</a>
+        <a href="#clients" class="hover:text-[#0A1931]">Clients</a>
+        <a href="#contact" class="hover:text-[#0A1931]">Contact</a>
+      </nav>
+
+      <div>
+        <a href="https://wa.me/919726659090" target="_blank" class="bg-[#0A1931] text-white px-5 py-2.5 text-[13px] font-semibold rounded-lg hover:bg-[#12264d] transition">
+          Consultation →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="bg-[#0A1931] text-white py-28 lg:py-36 px-6 relative overflow-hidden grain">
+    <div class="max-w-[1280px] mx-auto relative z-10">
+      <span class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest bg-[#D4AF37]/10 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/20">
+        Established 2004 • Ahmedabad, Gujarat
+      </span>
+      <h1 class="text-4xl lg:text-7xl font-black mt-6 tracking-tight">
+        Gadhavi Legal <span class="text-[#D4AF37]">Associates LLP</span>
+      </h1>
+      <p class="text-white/70 text-lg mt-4 max-w-2xl font-light">
+        Advocates & Legal Advisors — Institutional Panel Counsel for Banking, NBFC, Finance, Insurance, Civil, and Family Matters.
+      </p>
+      <div class="mt-8 flex gap-4 flex-wrap">
+        <a href="#contact" class="bg-[#D4AF37] text-[#0A1931] font-bold px-7 py-3 rounded-lg hover:bg-[#e5c15a] transition">
+          Empanelment Enquiry →
+        </a>
+        <a href="https://wa.me/919726659090" target="_blank" class="border border-white/20 text-white font-semibold px-7 py-3 rounded-lg hover:bg-white/10 transition">
+          WhatsApp • +91 9726659090
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST METRICS -->
+  <section class="bg-white border-b border-gray-200 py-8">
+    <div class="max-w-[1280px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="text-3xl font-black text-[#0A1931]">20+ Years</p>
+        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1 font-semibold">Legal Practice Excellence</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-[#0A1931]">G/81/2004</p>
+        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1 font-semibold">Bar Council Registration</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-[#0A1931]">Panel Counsel</p>
+        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1 font-semibold">Banking & Insurance</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-[#0A1931]">High Court</p>
+        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1 font-semibold">& Civil Court Ahmedabad</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT FIRM -->
+  <section id="about" class="py-24 bg-white px-6">
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-[#D4AF37] mb-2">About the Firm</h2>
+        <h3 class="text-3xl lg:text-4xl font-black text-[#0A1931] mb-6">Rooted in Integrity, Driven by Legal Precision.</h3>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Gadhavi Legal Associates LLP brings over two decades of uncompromising legal acumen. Founded in 2004 by seasoned practitioners <strong>Bhupatdan Gadhavi & Ila Gadhavi</strong>, our firm provides end-to-end strategic advisory and high-stakes litigation across banking frameworks, civil, family, insurance and corporate restructuring.
+        </p>
+        <ul class="space-y-3 text-gray-700 font-medium text-sm">
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span> Led by Adv. Bhupatdan Gadhavi & Adv. Ila Gadhavi</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span> Specialized Institutional Panel Counsel Services</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span> Domain Expertise in DRT, SARFAESI, High Court & RERA</li>
+        </ul>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- IMAGE 2: Bhupatdan Gadhavi Photo -->
+        <div class="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+          <img src="images/bhupatdan.jpg" alt="Bhupatdan Gadhavi" class="w-full h-64 object-cover rounded-lg mb-4 object-top" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400'">
+          <h4 class="font-bold text-[#0A1931] text-lg">Bhupatdan Gadhavi</h4>
+          <p class="text-xs text-[#D4AF37] font-semibold mt-1">Managing Partner • G/81/2004</p>
+        </div>
+
+        <!-- IMAGE 3: Ila Gadhavi Photo -->
+        <div class="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+          <img src="images/ila.jpg" alt="Ila Gadhavi" class="w-full h-64 object-cover rounded-lg mb-4 object-top" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400'">
+          <h4 class="font-bold text-[#0A1931] text-lg">Ila Gadhavi</h4>
+          <p class="text-xs text-[#D4AF37] font-semibold mt-1">Partner & Banking Expert</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE PILLARS -->
+  <section id="practice" class="py-24 bg-[#FAFBFC] px-6 border-t border-gray-200">
+    <div class="max-w-[1280px] mx-auto text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Core Competencies</h2>
+      <h3 class="text-3xl font-black text-[#0A1931]">Practice Pillars</h3>
+    </div>
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-black text-[#0A1931] mb-3">Banking, NBFC & Finance</h4>
+        <p class="text-gray-600 text-sm leading-relaxed">Institutional counsel for DRT, SARFAESI, IBC recovery, debt restructuring and bank panel litigation with precision drafting and high-court strategy.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-black text-[#0A1931] mb-3">Civil, Property & Family</h4>
+        <p class="text-gray-600 text-sm leading-relaxed">Title verification, partition, succession, injunction suits, matrimonial and custody matters — specialist civil and family practice before City Civil & High Court.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-black text-[#0A1931] mb-3">Insurance, Reclaim & RERA</h4>
+        <p class="text-gray-600 text-sm leading-relaxed">MACT, insurance claims, reclaim, corporate insurance disputes and RERA — structured settlements, tribunal advocacy and compliance advisory.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JUDICIAL PRESENCE -->
+  <section id="judicial" class="py-20 bg-[#0A1931] text-white px-6 text-center">
+    <h2 class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-3">Judicial Presence</h2>
+    <h3 class="text-2xl lg:text-3xl font-black mb-10">Appearing Regularly Before Key Forums & Authorities</h3>
+    <div class="max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold">Gujarat High Court</div>
+      <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold">DRT Ahmedabad</div>
+      <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold">Ahmedabad Civil Court</div>
+      <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold">RERA Gujarat</div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section id="clients" class="py-16 bg-white px-6 text-center">
+    <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Institutional Clients & Panel Empanelments</h2>
+    <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12 text-gray-400 font-black text-lg">
+      <span>AUXILO FINSERVE</span>
+      <span>TATA AIA</span>
+      <span>HDFC LIFE</span>
+      <span>NEW INDIA ASSURANCE</span>
+      <span>NATIONAL INSURANCE</span>
+      <span>ICICI LOMBARD</span>
+      <span>BAJAJ FINSERV</span>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER -->
+  <footer id="contact" class="bg-[#050D1F] text-white py-20 px-6 border-t border-white/10">
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <h4 class="text-[#D4AF37] font-bold uppercase tracking-wider text-xs mb-4">Court Office</h4>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          Gujarat High Court Complex, S.G. Highway, Ahmedabad – 380060
+        </p>
+        <p class="text-gray-400 text-sm">Phone: <strong class="text-white">+91 9726659090</strong></p>
+        <p class="text-gray-400 text-sm">Email: helpdesk@gadhavilegalassociates.com</p>
+      </div>
+      <div>
+        <h4 class="text-[#D4AF37] font-bold uppercase tracking-wider text-xs mb-4">Chambers Office</h4>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          Institutional Chambers, Ahmedabad – 380015
+        </p>
+        <p class="text-gray-400 text-sm">Mon–Sat: 10:00 AM – 06:30 PM</p>
+      </div>
+      <div>
+        <h4 class="text-[#D4AF37] font-bold uppercase tracking-wider text-xs mb-4">Quick Enquiry</h4>
+        <form onsubmit="event.preventDefault(); alert('Enquiry submitted successfully!');" class="space-y-4">
+          <input type="text" placeholder="Your Name" required class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+          <input type="email" placeholder="Email Address" required class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+          <textarea placeholder="Your Message" rows="3" required class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]"></textarea>
+          <button type="submit" class="w-full bg-[#D4AF37] text-[#0A1931] font-bold py-3 rounded-lg hover:bg-[#e5c15a] transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+      <p class="max-w-3xl mx-auto mb-4"><strong>Disclaimer:</strong> Under the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise.</p>
+      © 2026 Gadhavi Legal Associates LLP. All Rights Reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
