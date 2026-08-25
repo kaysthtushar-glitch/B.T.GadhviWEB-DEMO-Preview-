@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gadhavi Legal Associates</title>
+  <title>Gadhavi Legal Associates LLP | Institutional Law Firm Ahmedabad</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +22,24 @@
 </head>
 <body class="bg-[#FAFBFC] text-[#0A1931] antialiased selection:bg-[#0A1931] selection:text-white overflow-x-hidden">
 
+  <!-- BCI DISCLAIMER MODAL / OVERLAY (Rule 14) -->
+  <div id="bci-modal" class="fixed inset-0 z-[99999] bg-[#050D1F] flex items-center justify-center p-4">
+    <div class="bg-[#0A1931] border border-white/10 rounded-[20px] max-w-2xl w-full p-8 lg:p-10 text-white shadow-2xl text-center">
+      <div class="w-16 h-16 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mx-auto mb-6 border border-[#D4AF37]/30">
+        <span class="text-[#D4AF37] font-black text-xl">GLA</span>
+      </div>
+      <h3 class="text-xl lg:text-2xl font-black tracking-tight mb-4 text-[#D4AF37]">BAR COUNCIL OF INDIA DISCLAIMER</h3>
+      <div class="text-xs text-white/70 leading-relaxed space-y-3 mb-8 text-left bg-white/5 p-5 rounded-xl border border-white/5">
+        <p>Under the rules of the Bar Council of India, advocates and law firms are not permitted to solicit work or advertise. By accessing this website (gadhavilegalassociates.com), you acknowledge and confirm that you are seeking information of your own accord and volition for your informational use.</p>
+        <p>There has been no form of solicitation, advertisement, inducement, or persuasion of any sort whatsoever by Gadhavi Legal Associates LLP or its partners/members to solicit any work through this website.</p>
+        <p>Submitting an enquiry or viewing information does not automatically create an advocate-client relationship.</p>
+      </div>
+      <button onclick="document.getElementById('bci-modal').style.display='none';" class="bg-[#D4AF37] text-[#0A1931] font-extrabold px-8 py-3.5 rounded-xl hover:bg-[#e5c15a] transition text-sm tracking-wide shadow-lg">
+        I AGREE / ENTER WEBSITE
+      </button>
+    </div>
+  </div>
+
   <!-- TOP NOTIFICATION / BAR -->
   <div class="fixed top-0 left-0 right-0 z-[110] h-7 bg-[#0A1931] border-b border-white/10 text-white flex items-center justify-between px-4 sm:px-6 text-[11px]">
     <span class="bg-[#D4AF37] text-[#0A1931] px-2 py-0.5 rounded font-extrabold tracking-widest uppercase">EST. 2004</span>
@@ -32,27 +50,29 @@
   <header class="sticky top-7 z-50 bg-white/90 backdrop-blur-md border-b border-[#0A1931]/10 shadow-sm">
     <div class="max-w-[1280px] mx-auto px-6 h-[80px] flex items-center justify-between">
       <a href="#hero" class="flex items-center gap-3">
-        <!-- LOGO IMAGE -->
-        <img src="image/logo.png" alt="Gadhavi Legal Associates" class="h-[75px] w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+        <!-- LOGO -->
+        <img src="image/logo.png" alt="Gadhavi Legal Associates LLP" class="h-[75px] w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
         <div id="fallback-logo" style="display:none;" class="w-12 h-12 bg-[#0A1931] text-[#D4AF37] font-black items-center justify-center rounded-lg text-lg border border-[#D4AF37]/30 shadow">GL</div>
         <div class="flex flex-col leading-tight">
-          <span class="text-[15px] lg:text-[16px] font-black uppercase text-[#0A1931]">GADHAVI LEGAL</span>
-          <span class="text-[15px] lg:text-[16px] font-black uppercase text-[#0A1931]">ASSOCIATES</span>
+          <span class="text-[14px] lg:text-[15px] font-black uppercase text-[#0A1931]">GADHAVI LEGAL</span>
+          <span class="text-[14px] lg:text-[15px] font-black uppercase text-[#0A1931]">ASSOCIATES LLP</span>
         </div>
       </a>
       
-      <nav class="hidden md:flex items-center gap-8 text-[13px] font-semibold text-[#0A1931]/70">
-        <a href="#hero" class="hover:text-[#0A1931]">Home</a>
-        <a href="#about" class="hover:text-[#0A1931]">About Firm</a>
-        <a href="#practice" class="hover:text-[#0A1931]">Practice Areas</a>
-        <a href="#expertise" class="hover:text-[#0A1931]">Expertise</a>
-        <a href="#faq" class="hover:text-[#0A1931]">FAQ</a>
-        <a href="#contact" class="hover:text-[#0A1931]">Contact</a>
+      <nav class="hidden xl:flex items-center gap-6 text-[12.5px] font-semibold text-[#0A1931]/70">
+        <a href="#hero" class="hover:text-[#0A1931] transition">Home</a>
+        <a href="#banking-financial" class="hover:text-[#0A1931] transition">Banking & NBFC</a>
+        <a href="#land-title" class="hover:text-[#0A1931] transition">Title & Real Estate</a>
+        <a href="#insurance" class="hover:text-[#0A1931] transition">Insurance</a>
+        <a href="#practice" class="hover:text-[#0A1931] transition">Practice Areas</a>
+        <a href="#institutional-services" class="hover:text-[#0A1931] transition">Institutional Services</a>
+        <a href="#partners" class="hover:text-[#0A1931] transition">Partners</a>
+        <a href="#contact" class="hover:text-[#0A1931] transition">Contact</a>
       </nav>
 
       <div>
-        <a href="https://wa.me/919726659090" target="_blank" class="bg-[#0A1931] text-white px-5 py-2.5 text-[13px] font-semibold rounded-lg hover:bg-[#12264d] transition">
-          Consultation →
+        <a href="#contact" class="bg-[#0A1931] text-white px-5 py-2.5 text-[13px] font-semibold rounded-lg hover:bg-[#12264d] transition">
+          Request Consultation
         </a>
       </div>
     </div>
@@ -62,20 +82,20 @@
   <section id="hero" class="bg-[#0A1931] text-white py-28 lg:py-36 px-6 relative overflow-hidden grain">
     <div class="max-w-[1280px] mx-auto relative z-10" data-aos="fade-up" data-aos-duration="1000">
       <span class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest bg-[#D4AF37]/10 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/20">
-        Established 2004 • Ahmedabad, Gujarat
+        Banking • Finance • Insurance • Property • Corporate Legal Services • Est. 2004 • Ahmedabad
       </span>
-      <h1 class="text-4xl lg:text-7xl font-black mt-6 tracking-tight">
-        Gadhavi Legal <span class="text-[#D4AF37]">Associates</span>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black mt-6 tracking-tight leading-tight">
+        Institutional Legal Counsel for Banking, Finance, Insurance, Property & <span class="text-[#D4AF37]">Corporate Matters</span>
       </h1>
-      <p class="text-white/70 text-lg mt-4 max-w-2xl font-light">
-        Advocates & Legal Advisors — Institutional Panel Counsel for Banking, NBFC, Finance, Insurance, Civil, and Family Matters.
+      <p class="text-white/70 text-base lg:text-lg mt-4 max-w-4xl font-light">
+        Litigation • Non-Litigation • Title Due Diligence • Mortgage Documentation • Recovery • DRT • SARFAESI • Revenue • RERA & Real Estate
       </p>
       <div class="mt-8 flex gap-4 flex-wrap">
-        <a href="#contact" class="bg-[#D4AF37] text-[#0A1931] font-bold px-7 py-3 rounded-lg hover:bg-[#e5c15a] transition">
-          Empanelment Enquiry →
+        <a href="#contact" class="bg-[#D4AF37] text-[#0A1931] font-extrabold px-7 py-3.5 rounded-xl hover:bg-[#e5c15a] transition shadow-lg text-sm tracking-wide">
+          INSTITUTIONAL / EMPANELMENT ENQUIRY
         </a>
-        <a href="https://wa.me/919726659090" target="_blank" class="border border-white/20 text-white font-semibold px-7 py-3 rounded-lg hover:bg-white/10 transition">
-          WhatsApp • +91 9726659090
+        <a href="#contact" class="border border-white/20 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 transition text-sm tracking-wide">
+          REQUEST CONSULTATION
         </a>
       </div>
     </div>
@@ -103,10 +123,200 @@
     </div>
   </section>
 
-  <!-- ABOUT FIRM -->
-  <section id="about" class="py-24 bg-white px-6">
-    <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div data-aos="fade-right" data-aos-duration="1000">
+  <!-- 4. BANKING & FINANCIAL INSTITUTIONS DEDICATED SECTION -->
+  <section id="banking-financial" class="py-24 bg-[#FAFBFC] px-6 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="text-xs font-extrabold uppercase tracking-widest text-[#D4AF37] mb-2">Institutional Sector Focus</h2>
+      <h3 class="text-3xl lg:text-4xl font-black text-[#0A1931] mb-3">BANKING, NBFC & FINANCIAL INSTITUTIONS</h3>
+      <p class="text-gray-600 text-sm max-w-2xl mx-auto">End-to-End Litigation & Non-Litigation Legal Support for Banks, NBFCs, and Financial Creditors.</p>
+    </div>
+
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Litigation Card -->
+      <div class="bg-white p-8 lg:p-10 rounded-[20px] border border-gray-200 shadow-sm" data-aos="fade-right">
+        <h4 class="text-xl font-black text-[#0A1931] mb-4 pb-3 border-b border-gray-100 flex items-center justify-between">
+          LITIGATION <span class="text-xs font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full">Judicial / Recovery</span>
+        </h4>
+        <div class="flex flex-wrap gap-2.5">
+          {["DRT Proceedings", "SARFAESI Matters", "Recovery Proceedings", "NI Act Matters", "Arbitration", "Civil & Commercial Litigation", "Secured Asset Enforcement", "High Court Proceedings"].map((item, idx) => (
+            <span key={idx} class="bg-[#FAFBFC] border border-gray-200 text-[#0A1931] text-xs font-bold px-3.5 py-2 rounded-lg">{item}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Non-Litigation Card -->
+      <div class="bg-white p-8 lg:p-10 rounded-[20px] border border-gray-200 shadow-sm" data-aos="fade-left">
+        <h4 class="text-xl font-black text-[#0A1931] mb-4 pb-3 border-b border-gray-100 flex items-center justify-between">
+          NON-LITIGATION <span class="text-xs font-bold text-[#0A1931] bg-gray-100 px-3 py-1 rounded-full">Advisory / Title</span>
+        </h4>
+        <div class="flex flex-wrap gap-2.5">
+          {["Title Investigation", "Search Reports", "Legal Scrutiny Reports", "Title Opinions", "Mortgage Documentation", "Security Documentation", "Loan Document Vetting", "Property Due Diligence", "Registration Support"].map((item, idx) => (
+            <span key={idx} class="bg-[#FAFBFC] border border-gray-200 text-[#0A1931] text-xs font-bold px-3.5 py-2 rounded-lg">{item}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. LAND, TITLE & REAL ESTATE SECTION -->
+  <section id="land-title" class="py-24 bg-white px-6 border-t border-gray-200 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-[#D4AF37] mb-2">Property & Revenue Practice</h2>
+        <h3 class="text-3xl lg:text-4xl font-black text-[#0A1931] mb-3">LAND, TITLE & REAL ESTATE</h3>
+        <p class="text-gray-600 text-sm max-w-2xl mx-auto">Comprehensive title verification, conveyancing, developer advisory and revenue dispute management.</p>
+      </div>
+
+      <div class="bg-[#FAFBFC] p-8 lg:p-12 rounded-[24px] border border-gray-200 shadow-sm mb-8" data-aos="fade-up">
+        <div class="flex flex-wrap gap-3 mb-8">
+          {["Title Verification", "30-Year Title Search", "Revenue Record Verification", "Encumbrance & Mutation Review", "Property Due Diligence", "Sale/Lease/Mortgage Documentation", "NA & Revenue Matters", "RERA", "Builder & Developer Advisory"].map((item, idx) => (
+            <span key={idx} class="bg-white border border-gray-200 text-[#0A1931] text-xs font-bold px-4 py-2.5 rounded-xl shadow-xs">{item}</span>
+          ))}
+        </div>
+
+        <div class="border-t border-gray-200 pt-8">
+          <h4 class="text-lg font-black text-[#0A1931] mb-4">REVENUE AUTHORITIES & TRIBUNALS</h4>
+          <div class="flex flex-wrap gap-2">
+            {["Mamlatdar", "Prant Officer", "Deputy Collector", "Collector", "SSRD", "Gujarat Revenue Tribunal (GRT)"].map((auth, i) => (
+              <span key={i} class="bg-[#0A1931] text-white text-[11px] font-bold px-3 py-1.5 rounded-lg">{auth}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. INSURANCE LITIGATION & SERVICES SECTION -->
+  <section id="insurance" class="py-24 bg-[#0A1931] text-white px-6 scroll-mt-[96px] overflow-hidden">
+    <div class="max-w-[1280px] mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-[#D4AF37] mb-2">Insurance Department Support</h2>
+        <h3 class="text-3xl lg:text-4xl font-black mb-3">INSURANCE LITIGATION & LEGAL SERVICES</h3>
+        <p class="text-white/70 text-sm max-w-2xl mx-auto">Structured representation for insurance companies, claim review, MACT defence, and policy interpretation.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" data-aos="fade-up">
+        {["Insurer-Side Representation", "MACT Defence", "Consumer Commission Litigation", "Claim Disputes", "Policy Interpretation", "Repudiation Defence", "Claim Legal Review", "Recovery Proceedings", "Legal Opinions", "High Court Litigation"].map((ins, idx) => (
+          <div key={idx} class="bg-white/5 border border-white/10 p-5 rounded-xl text-center flex items-center justify-center font-bold text-xs text-white/90 hover:bg-white/10 transition">
+            {ins}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CORE PRACTICE AREAS (PRACTICE PILLARS) -->
+  <section id="practice" class="py-24 bg-[#FAFBFC] px-6 border-t border-gray-200 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Core Competencies</h2>
+      <h3 class="text-3xl font-black text-[#0A1931]">Practice Areas</h3>
+    </div>
+
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- A. Banking -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Banking, NBFC & Financial Services</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• DRT Proceedings & SARFAESI Matters</li>
+          <li>• Debt & Loan Recovery / NI Act Matters</li>
+          <li>• Arbitration & Secured Asset Enforcement</li>
+          <li>• Banking Litigation & Loan Documentation</li>
+          <li>• Legal Opinions</li>
+        </ul>
+      </div>
+
+      <!-- B. Title & Mortgage -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Title, Mortgage & Due Diligence</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• Title Investigation & Search Reports</li>
+          <li>• 30-Year Title Chain Verification</li>
+          <li>• Property & Revenue Record Due Diligence</li>
+          <li>• Mortgage & Security Creation Documents</li>
+          <li>• Vetting & Registration Support</li>
+        </ul>
+      </div>
+
+      <!-- C. Insurance -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Insurance Litigation</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• Insurance Company Representation</li>
+          <li>• MACT & Consumer Commission Matters</li>
+          <li>• Claim Disputes & Policy Interpretation</li>
+          <li>• Repudiation Defence & Fraud Review</li>
+          <li>• Recovery Proceedings & High Court Appeals</li>
+        </ul>
+      </div>
+
+      <!-- D. Property & Real Estate -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Land, Property & Real Estate</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• Property Litigation & Title Disputes</li>
+          <li>• Partition, Possession & Injunction Suits</li>
+          <li>• Conveyancing (Sale Deed, Lease, POA)</li>
+          <li>• Builder/Developer Advisory & RERA Matters</li>
+        </ul>
+      </div>
+
+      <!-- E. Revenue & Land Laws -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Revenue & Land Laws</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• Revenue Record Matters (7/12 & Mutation)</li>
+          <li>• RTS Proceedings & NA Permission</li>
+          <li>• Agricultural Land & Tenancy Matters</li>
+          <li>• Revenue Appeals (Mamlatdar to GRT)</li>
+        </ul>
+      </div>
+
+      <!-- F. Corporate & Commercial -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-lg font-black text-[#0A1931] mb-4 pb-2 border-b border-gray-100">Corporate & Commercial</h4>
+        <ul class="space-y-2 text-xs text-gray-600 font-medium">
+          <li>• Corporate Litigation & Commercial Disputes</li>
+          <li>• Contract Drafting, Vetting & Agreements</li>
+          <li>• Legal Notices, Opinions & Due Diligence</li>
+          <li>• Retainership & Litigation Management</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. INSTITUTIONAL LEGAL SERVICES SECTION -->
+  <section id="institutional-services" class="py-24 bg-white px-6 border-t border-gray-200 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-[#D4AF37] mb-2">Retainership & Panel Framework</h2>
+      <h3 class="text-3xl lg:text-4xl font-black text-[#0A1931]">INSTITUTIONAL LEGAL SERVICES</h3>
+    </div>
+
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-[#FAFBFC] p-6 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up">
+        <h4 class="font-black text-[#0A1931] text-base mb-3 text-[#D4AF37]">BANKS & NBFCs</h4>
+        <p class="text-xs text-gray-600 leading-relaxed">Litigation • Recovery • DRT • SARFAESI • Title Search • Mortgage • Documentation</p>
+      </div>
+      <div class="bg-[#FAFBFC] p-6 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="font-black text-[#0A1931] text-base mb-3 text-[#D4AF37]">INSURANCE COMPANIES</h4>
+        <p class="text-xs text-gray-600 leading-relaxed">MACT • Consumer Litigation • Claims • Recovery • Legal Opinions</p>
+      </div>
+      <div class="bg-[#FAFBFC] p-6 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="font-black text-[#0A1931] text-base mb-3 text-[#D4AF37]">BUILDERS & DEVELOPERS</h4>
+        <p class="text-xs text-gray-600 leading-relaxed">Title Due Diligence • RERA • Documentation • Property Litigation • Revenue Matters</p>
+      </div>
+      <div class="bg-[#FAFBFC] p-6 rounded-2xl border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="font-black text-[#0A1931] text-base mb-3 text-[#D4AF37]">CORPORATES</h4>
+        <p class="text-xs text-gray-600 leading-relaxed">Contracts • Recovery • Commercial Litigation • Legal Opinions • Documentation • Retainership</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT FIRM & PARTNERS SECTION -->
+  <section id="partners" class="py-24 bg-[#FAFBFC] px-6 border-t border-gray-200 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      <div data-aos="fade-right">
         <h2 class="text-xs font-bold uppercase tracking-widest text-[#D4AF37] mb-2">About the Firm</h2>
         <h3 class="text-3xl lg:text-4xl font-black text-[#0A1931] mb-6">Rooted in Integrity, Driven by Legal Precision.</h3>
         <p class="text-gray-600 leading-relaxed mb-6">
@@ -119,258 +329,143 @@
         </ul>
       </div>
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-left" data-aos-duration="1000">
-        <!-- Partner 1 Photo: Bhupatdan Gadhavi -->
-        <div class="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center hover:-translate-y-1 transition duration-300">
-          <img src="image/bhupatdan.jpg" alt="Bhupatdan Gadhavi" class="w-full h-64 object-cover rounded-lg mb-4 object-top shadow-inner" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400'">
+      <!-- 7. PARTNERS SECTION -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-left">
+        <!-- Partner 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+          <img src="image/bhupatdan.jpg" alt="Bhupatdan Gadhavi" class="w-full h-56 object-cover rounded-xl mb-4 object-top shadow-inner" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400'">
           <h4 class="font-bold text-[#0A1931] text-lg">Bhupatdan Gadhavi</h4>
-          <p class="text-xs text-[#D4AF37] font-semibold mt-1">Managing Partner • G/81/2004</p>
+          <p class="text-xs text-[#D4AF37] font-semibold mt-1 mb-3">Banking • Property • Revenue • Civil & Commercial Litigation</p>
+          <div class="text-[11px] text-gray-600 text-left bg-[#FAFBFC] p-3 rounded-lg border border-gray-100">
+            <strong>Practice Focus:</strong> Banking & Financial Litigation, DRT, SARFAESI, Property & Title Disputes, Revenue Litigation, RERA, Civil & Commercial Litigation, High Court Matters.
+          </div>
         </div>
 
-        <!-- Partner 2 Photo: Ila Gadhavi (ila1.jpg) -->
-        <div class="bg-[#FAFBFC] p-4 rounded-xl border border-gray-200 shadow-sm text-center hover:-translate-y-1 transition duration-300">
-          <img src="image/ila1.jpg" alt="Ila Gadhavi" class="w-full h-64 object-cover rounded-lg mb-4 object-top shadow-inner" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400'">
+        <!-- Partner 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+          <img src="image/ila1.jpg" alt="Ila Gadhavi" class="w-full h-56 object-cover rounded-xl mb-4 object-top shadow-inner" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400'">
           <h4 class="font-bold text-[#0A1931] text-lg">Ila Gadhavi</h4>
-          <p class="text-xs text-[#D4AF37] font-semibold mt-1">Partner & Banking Expert</p>
+          <p class="text-xs text-[#D4AF37] font-semibold mt-1 mb-3">Banking • Insurance • Recovery & Institutional Litigation</p>
+          <div class="text-[11px] text-gray-600 text-left bg-[#FAFBFC] p-3 rounded-lg border border-gray-100">
+            <strong>Practice Focus:</strong> Insurance Litigation, MACT, Consumer Matters, Banking Recovery, DRT, SARFAESI, Documentation, Institutional Legal Assignments.
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRACTICE PILLARS -->
-  <section id="practice" class="py-24 bg-[#FAFBFC] px-6 border-t border-gray-200">
-    <div class="max-w-[1280px] mx-auto text-center mb-16" data-aos="fade-up" data-aos-duration="800">
-      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Core Competencies</h2>
-      <h3 class="text-3xl font-black text-[#0A1931]">Practice Pillars</h3>
-    </div>
-    <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
-        <h4 class="text-xl font-black text-[#0A1931] mb-3">Banking, NBFC & Finance</h4>
-        <p class="text-gray-600 text-sm leading-relaxed">Institutional counsel for DRT, SARFAESI, IBC recovery, debt restructuring and bank panel litigation with precision drafting and high-court strategy.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
-        <h4 class="text-xl font-black text-[#0A1931] mb-3">Civil, Property & Family</h4>
-        <p class="text-gray-600 text-sm leading-relaxed">Title verification, partition, succession, injunction suits, matrimonial and custody matters — specialist civil and family practice before City Civil & High Court.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
-        <h4 class="text-xl font-black text-[#0A1931] mb-3">Insurance, Reclaim & RERA</h4>
-        <p class="text-gray-600 text-sm leading-relaxed">MACT, insurance claims, reclaim, corporate insurance disputes and RERA — structured settlements, tribunal advocacy and compliance advisory.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERTISE SPLIT BY SPECIALIZATION MODEL (BOTH CARDS MATCHED DARK THEME) -->
-  <section id="expertise" class="py-24 bg-white px-6 border-t border-gray-200 scroll-mt-[96px]">
-    <div class="max-w-[1280px] mx-auto text-center mb-16" data-aos="fade-up" data-aos-duration="800">
-      <h2 class="text-3xl lg:text-4xl font-black text-[#0A1931] mb-3">Expertise Split by Specialization Model</h2>
-      <p class="text-gray-600 text-sm max-w-xl mx-auto">Civil & Family matters led by Bhupatdan Gadhavi. Banking, Insurance & Reclaim led by Ila Gadhavi. One retainer, both specializations.</p>
-    </div>
-
-    <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <!-- 8. COURTS, TRIBUNALS & AUTHORITIES SECTION -->
+  <section id="judicial" class="py-20 bg-[#0A1931] text-white px-6 text-center overflow-hidden scroll-mt-[96px]">
+    <div data-aos="zoom-in" data-aos-duration="1000">
+      <h2 class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-3">Judicial Presence</h2>
+      <h3 class="text-2xl lg:text-3xl font-black mb-4">COURTS, TRIBUNALS & AUTHORITIES</h3>
+      <p class="text-white/60 text-xs mb-10 max-w-xl mx-auto">Legal practice and representation before Courts, Tribunals and Statutory/Revenue Authorities, as applicable.</p>
       
-      <!-- CARD 1: BHUPATDAN GADHAVI (DARK THEME #0A1931) -->
-      <div class="bg-[#0A1931] text-white p-8 lg:p-10 rounded-[24px] border border-white/10 shadow-lg" data-aos="fade-right" data-aos-duration="1000">
-        <div class="flex items-center gap-4 mb-8">
-          <img src="image/bhupatdan.jpg" alt="Bhupatdan Gadhavi" class="w-12 h-12 rounded-full object-cover object-top border border-[#D4AF37]">
-          <div>
-            <span class="text-[10px] font-extrabold tracking-widest uppercase text-[#D4AF37] block">LED BY</span>
-            <h4 class="font-black text-white text-base">Bhupatdan Gadhavi • Civil & Family Specialist</h4>
+      <div class="max-w-[1100px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        {["Gujarat High Court", "City Civil & Sessions Court", "District Courts", "Commercial Courts", "DRT Ahmedabad", "RERA Gujarat", "Consumer Commissions", "MACT", "Revenue Courts", "Mamlatdar", "Deputy Collector", "Collector", "SSRD", "Gujarat Revenue Tribunal (GRT)"].map((court, i) => (
+          <div key={i} class="bg-white/5 border border-white/10 p-4 rounded-lg font-bold text-xs hover:bg-white/10 transition">
+            {court}
           </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Civil Litigation</h5>
-            <p class="text-xs text-white/70">Property, contracts, injunctions, specific performance</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Family Matters</h5>
-            <p class="text-xs text-white/70">Divorce, custody, maintenance, domestic</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Property Disputes</h5>
-            <p class="text-xs text-white/70">Title, partition, possession, encroachment</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Commercial & RERA</h5>
-            <p class="text-xs text-white/70">Builder disputes, commercial contracts</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">DRT & SARFAESI</h5>
-            <p class="text-xs text-white/70">Debt recovery, auction challenge</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">IBC & Arbitration</h5>
-            <p class="text-xs text-white/70">Insolvency, domestic arbitration</p>
-          </div>
-        </div>
+        ))}
       </div>
-
-      <!-- CARD 2: ILA GADHAVI (MATCHED DARK THEME #0A1931) -->
-      <div class="bg-[#0A1931] text-white p-8 lg:p-10 rounded-[24px] border border-white/10 shadow-lg" data-aos="fade-left" data-aos-duration="1000">
-        <div class="flex items-center gap-4 mb-8">
-          <img src="image/ila1.jpg" alt="Ila Gadhavi" class="w-12 h-12 rounded-full object-cover object-top border border-[#D4AF37]">
-          <div>
-            <span class="text-[10px] font-extrabold tracking-widest uppercase text-[#D4AF37] block">LED BY</span>
-            <h4 class="font-black text-white text-base">Ila Gadhavi • Banking Insurance & Reclaim Expert</h4>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Banking Laws</h5>
-            <p class="text-xs text-white/70">Loan recovery, restructuring, compliance</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Insurance Claims</h5>
-            <p class="text-xs text-white/70">Repudiation, claim settlement, TAT</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Reclaim Matters</h5>
-            <p class="text-xs text-white/70">Asset reclaim, hypothecation recovery</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">DRT Representation</h5>
-            <p class="text-xs text-white/70">Bank side & borrower side DRT</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">SARFAESI Challenge</h5>
-            <p class="text-xs text-white/70">Section 13, 14, 17 proceedings</p>
-          </div>
-          <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
-            <h5 class="font-bold text-[#D4AF37] text-sm mb-1">Institutional Retainership</h5>
-            <p class="text-xs text-white/70">Documentation, legal audit desk</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION SECTION) -->
+  <!-- 10. INSTITUTIONAL CLIENTS & EXPERIENCE SECTION -->
+  <section id="clients" class="py-20 bg-white px-6 text-center border-t border-gray-200 scroll-mt-[96px]">
+    <div class="max-w-[1280px] mx-auto" data-aos="fade-in">
+      <h2 class="text-xs font-extrabold uppercase tracking-widest text-[#D4AF37] mb-2">Track Record</h2>
+      <h3 class="text-2xl lg:text-3xl font-black text-[#0A1931] mb-10">Institutional Experience / Professional Engagements</h3>
+      
+      <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12 text-gray-500 font-black text-base lg:text-lg mb-12">
+        <span class="hover:text-[#0A1931] transition">AUXILO FINSERVE</span>
+        <span class="hover:text-[#0A1931] transition">TATA AIA</span>
+        <span class="hover:text-[#0A1931] transition">HDFC LIFE</span>
+        <span class="hover:text-[#0A1931] transition">NEW INDIA ASSURANCE</span>
+        <span class="hover:text-[#0A1931] transition">NATIONAL INSURANCE</span>
+        <span class="hover:text-[#0A1931] transition">ICICI LOMBARD</span>
+        <span class="hover:text-[#0A1931] transition">BAJAJ FINSERV</span>
+      </div>
+      <p class="text-[11px] text-gray-400 italic">Showing institutional experience and professional engagements. Empanelments updated per active institutional assignments.</p>
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS (FAQ SECTION) -->
   <section id="faq" class="py-24 bg-[#FAFBFC] px-6 border-t border-gray-200 scroll-mt-[96px]">
-    <div class="max-w-[900px] mx-auto text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+    <div class="max-w-[900px] mx-auto text-center mb-16" data-aos="fade-up">
       <h2 class="text-3xl lg:text-4xl font-black text-[#0A1931]">Frequently Asked Questions</h2>
     </div>
 
-    <div class="max-w-[900px] mx-auto space-y-4" data-aos="fade-up" data-aos-duration="1000">
-      
-      <!-- FAQ ITEM 1 (OPEN BY DEFAULT) -->
+    <div class="max-w-[900px] mx-auto space-y-4" data-aos="fade-up">
       <div class="bg-white border border-gray-200 rounded-[16px] overflow-hidden shadow-sm">
-        <button onclick="let content = document.getElementById('faq-1'); let icon = document.getElementById('icon-1'); if(content.style.maxHeight){content.style.maxHeight = null; icon.innerText='+';} else {content.style.maxHeight = content.scrollHeight + 'px'; icon.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
+        <button onclick="let c=document.getElementById('faq-1'); let i=document.getElementById('icon-1'); if(c.style.maxHeight){c.style.maxHeight=null; i.innerText='+';}else{c.style.maxHeight=c.scrollHeight+'px'; i.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
           <span>Do both Bhupatdan & Ila Gadhavi practice at Gujarat High Court?</span>
           <span id="icon-1" class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-sm font-black">-</span>
         </button>
         <div id="faq-1" style="max-height: 200px;" class="px-6 pb-6 text-sm text-gray-600 leading-relaxed transition-all duration-300 overflow-hidden">
-          Yes. Both Partners practice at Gujarat High Court Complex, S.G. Highway, Ahmedabad and Ahmedabad Civil Court. Court Office timings Mon–Sat 10:00–18:30 on appointment.
+          Yes. Both Partners practice at Gujarat High Court Complex, S.G. Highway, Ahmedabad and Ahmedabad Civil Court. Court Office timings Mon–Sat by prior appointment.
         </div>
       </div>
 
-      <!-- FAQ ITEM 2 -->
       <div class="bg-white border border-gray-200 rounded-[16px] overflow-hidden shadow-sm">
-        <button onclick="let content = document.getElementById('faq-2'); let icon = document.getElementById('icon-2'); if(content.style.maxHeight){content.style.maxHeight = null; icon.innerText='+';} else {content.style.maxHeight = content.scrollHeight + 'px'; icon.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
-          <span>What is the difference in specialization?</span>
+        <button onclick="let c=document.getElementById('faq-2'); let i=document.getElementById('icon-2'); if(c.style.maxHeight){c.style.maxHeight=null; i.innerText='+';}else{c.style.maxHeight=c.scrollHeight+'px'; i.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
+          <span>What is the practice focus for each partner?</span>
           <span id="icon-2" class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-sm font-black">+</span>
         </button>
         <div id="faq-2" style="max-height: null;" class="px-6 pb-6 text-sm text-gray-600 leading-relaxed transition-all duration-300 overflow-hidden max-h-0">
-          Bhupatdan Gadhavi specializes in Civil Litigation, Property Disputes, Family, DRT, and RERA matters. Ila Gadhavi specializes in Banking Laws, Insurance Claims, Reclaim Matters, SARFAESI, and Institutional Retainerships.
+          Bhupatdan Gadhavi focuses on Banking & Financial Litigation, DRT, SARFAESI, Property & Title Disputes, Revenue Litigation, and RERA. Ila Gadhavi focuses on Insurance Litigation, MACT, Consumer Matters, Banking Recovery, and Institutional Legal Assignments.
         </div>
       </div>
 
-      <!-- FAQ ITEM 3 -->
       <div class="bg-white border border-gray-200 rounded-[16px] overflow-hidden shadow-sm">
-        <button onclick="let content = document.getElementById('faq-3'); let icon = document.getElementById('icon-3'); if(content.style.maxHeight){content.style.maxHeight = null; icon.innerText='+';} else {content.style.maxHeight = content.scrollHeight + 'px'; icon.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
-          <span>What is helpdesk email and phone?</span>
+        <button onclick="let c=document.getElementById('faq-3'); let i=document.getElementById('icon-3'); if(c.style.maxHeight){c.style.maxHeight=null; i.innerText='+';}else{c.style.maxHeight=c.scrollHeight+'px'; i.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
+          <span>How can banks and corporations request retainership or empanelment?</span>
           <span id="icon-3" class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-sm font-black">+</span>
         </button>
         <div id="faq-3" style="max-height: null;" class="px-6 pb-6 text-sm text-gray-600 leading-relaxed transition-all duration-300 overflow-hidden max-h-0">
-          You can reach out via phone at +91 9726659090 or email at helpdesk@gadhavilegalassociates.com for institutional retainer and consultation queries.
+          Institutional clients can submit an empanelment enquiry through our corporate form or contact our office directly via official email and phone.
         </div>
       </div>
-
-      <!-- FAQ ITEM 4 -->
-      <div class="bg-white border border-gray-200 rounded-[16px] overflow-hidden shadow-sm">
-        <button onclick="let content = document.getElementById('faq-4'); let icon = document.getElementById('icon-4'); if(content.style.maxHeight){content.style.maxHeight = null; icon.innerText='+';} else {content.style.maxHeight = content.scrollHeight + 'px'; icon.innerText='-';}" class="w-full flex items-center justify-between p-6 text-left font-bold text-[#0A1931] hover:bg-gray-50 transition">
-          <span>Where are your offices?</span>
-          <span id="icon-4" class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-sm font-black">+</span>
-        </button>
-        <div id="faq-4" style="max-height: null;" class="px-6 pb-6 text-sm text-gray-600 leading-relaxed transition-all duration-300 overflow-hidden max-h-0">
-          Our Court Office is at Gujarat High Court Complex, S.G. Highway, Ahmedabad, and our Institutional Chambers office is located in Ahmedabad.
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- JUDICIAL PRESENCE -->
-  <section id="judicial" class="py-20 bg-[#0A1931] text-white px-6 text-center overflow-hidden">
-    <div data-aos="zoom-in" data-aos-duration="1000">
-      <h2 class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-3">Judicial Presence</h2>
-      <h3 class="text-2xl lg:text-3xl font-black mb-10">Appearing Regularly Before Key Forums & Authorities</h3>
-      <div class="max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold hover:bg-white/10 transition">Gujarat High Court</div>
-        <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold hover:bg-white/10 transition">DRT Ahmedabad</div>
-        <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold hover:bg-white/10 transition">Ahmedabad Civil Court</div>
-        <div class="bg-white/5 border border-white/10 p-5 rounded-lg font-bold hover:bg-white/10 transition">RERA Gujarat</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLIENTS -->
-  <section id="clients" class="py-16 bg-white px-6 text-center" data-aos="fade-in" data-aos-duration="800">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Institutional Clients & Panel Empanelments</h2>
-    <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12 text-gray-400 font-black text-lg">
-      <span class="hover:text-[#0A1931] transition">AUXILO FINSERVE</span>
-      <span class="hover:text-[#0A1931] transition">TATA AIA</span>
-      <span class="hover:text-[#0A1931] transition">HDFC LIFE</span>
-      <span class="hover:text-[#0A1931] transition">NEW INDIA ASSURANCE</span>
-      <span class="hover:text-[#0A1931] transition">NATIONAL INSURANCE</span>
-      <span class="hover:text-[#0A1931] transition">ICICI LOMBARD</span>
-      <span class="hover:text-[#0A1931] transition">BAJAJ FINSERV</span>
-    </div>
-  </section>
-
-  <!-- CONTACT & CONSULTATION SECTION -->
-  <section id="contact" class="py-24 bg-white px-6 scroll-mt-[96px]" data-aos="fade-up" data-aos-duration="1000">
+  <!-- 11. INSTITUTIONAL / CORPORATE ENQUIRY FORM SECTION -->
+  <section id="contact" class="py-24 bg-white px-6 scroll-mt-[96px]" data-aos="fade-up">
     <div class="max-w-[1280px] mx-auto bg-white rounded-[24px] border border-gray-200 shadow-[0_20px_50px_rgba(10,25,49,0.06)] overflow-hidden grid grid-cols-1 lg:grid-cols-12">
       
-      <!-- LEFT DARK COLUMN (Offices & Contact Info) -->
+      <!-- LEFT DARK COLUMN -->
       <div class="lg:col-span-6 bg-[#0A1931] text-white p-8 lg:p-14 flex flex-col justify-between relative overflow-hidden">
         <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div>
-          <!-- Logo & Title -->
           <div class="flex items-center gap-3 mb-8">
             <img src="image/logo.png" alt="Logo" class="h-10 w-auto object-contain brightness-0 invert">
             <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37]">Gadhavi Legal Associates</span>
           </div>
           <h2 class="text-3xl lg:text-4xl font-black tracking-tight mb-4 leading-tight">
-            Book Consultation <br><span class="text-[#D4AF37]">with Both Partners</span>
+            Institutional / Corporate <br><span class="text-[#D4AF37]">Enquiry</span>
           </h2>
           <p class="text-white/70 text-sm leading-relaxed mb-8">
-            Gujarat High Court Complex practice. Documentation & Retainership at Institutional Chambers. Call or WhatsApp for appointment.
+            Gujarat High Court Complex practice. Documentation & Retainership at Institutional Chambers. Connect for panel counsel assignments.
           </p>
 
-          <!-- Office Cards Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <!-- Court Office -->
-            <div class="bg-white/5 border border-white/10 p-5 rounded-[14px] backdrop-blur-sm">
+            <div class="bg-white/5 border border-white/10 p-5 rounded-[14px]">
               <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#D4AF37] block mb-2">Court Office</span>
               <p class="text-xs text-white/80 leading-relaxed mb-3">
                 Gujarat High Court Complex, S.G. Highway, Ahmedabad – 380060<br>
-                <strong>Mon–Sat 10:00–18:30 • On Appointment</strong>
+                <strong>Mon–Sat by Prior Appointment</strong>
               </p>
               <p class="text-[11px] text-[#D4AF37] font-semibold border-t border-white/10 pt-2">
-                Both Partners: Bhupatdan Gadhavi & Ila Gadhavi practice here
+                Partners Practice Here
               </p>
             </div>
 
-            <!-- Chambers Office -->
-            <div class="bg-white/5 border border-white/10 p-5 rounded-[14px] backdrop-blur-sm">
-              <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#D4AF37] block mb-2">Gadhavi Legal Associates Office</span>
+            <div class="bg-white/5 border border-white/10 p-5 rounded-[14px]">
+              <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#D4AF37] block mb-2">Chambers Office</span>
               <p class="text-xs text-white/80 leading-relaxed mb-3">
                 Institutional Chambers, Ahmedabad – 380015<br>
-                <strong>Documentation, Client Meetings, Retainership Desk</strong>
+                <strong>Documentation & Retainership Desk</strong>
               </p>
               <p class="text-[11px] text-[#D4AF37] font-semibold border-t border-white/10 pt-2">
                 Partners: Bhupatdan & Ila Gadhavi
@@ -379,7 +474,6 @@
           </div>
         </div>
 
-        <!-- Action Buttons -->
         <div class="space-y-4 pt-4 border-t border-white/10">
           <div class="flex flex-wrap gap-3">
             <a href="tel:+919726659090" class="flex-1 text-center bg-[#D4AF37] text-[#0A1931] font-extrabold text-xs tracking-wider uppercase py-3.5 px-4 rounded-xl hover:bg-[#e5c15a] transition shadow-md">
@@ -397,58 +491,85 @@
         </div>
       </div>
 
-      <!-- RIGHT LIGHT COLUMN (Quick Enquiry Form & Partners Footer) -->
+      <!-- RIGHT FORM COLUMN -->
       <div class="lg:col-span-6 p-8 lg:p-14 flex flex-col justify-between bg-white">
         <div>
           <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
             <span class="text-xs font-black uppercase tracking-widest text-[#0A1931] flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span> Quick Enquiry
+              <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span> Professional Client Portal
             </span>
-            <span class="text-[11px] font-bold text-gray-400 bg-gray-100 px-3 py-1 rounded-full">Response in 2 hrs</span>
+            <span class="text-[11px] font-bold text-gray-400 bg-gray-100 px-3 py-1 rounded-full">Secure & Confidential</span>
           </div>
 
-          <!-- WhatsApp Direct Form -->
           <form onsubmit="
             event.preventDefault();
             let name = document.getElementById('eq-name').value;
+            let org = document.getElementById('eq-org').value;
+            let des = document.getElementById('eq-des').value;
             let phone = document.getElementById('eq-phone').value;
+            let email = document.getElementById('eq-email').value;
+            let reqType = document.getElementById('eq-type').value;
+            let matterType = document.getElementById('eq-matter').value;
             let msg = document.getElementById('eq-msg').value;
-            let text = `Hello, my name is ${name} (Phone: ${phone}). Requirement: ${msg}`;
+            let text = `Institutional Enquiry:\nName: ${name} (${des} at ${org})\nPhone: ${phone} | Email: ${email}\nType: ${reqType} | Matter: ${matterType}\nDetails: ${msg}`;
             window.open(`https://wa.me/919726659090?text=${encodeURIComponent(text)}`, '_blank');
           " class="space-y-4 mb-8">
-            <div>
-              <input type="text" id="eq-name" placeholder="Full Name" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-4 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" id="eq-name" placeholder="Full Name *" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+              <input type="text" id="eq-org" placeholder="Organisation / Company *" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <input type="text" id="eq-des" placeholder="Designation" class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+              <input type="tel" id="eq-phone" placeholder="Mobile Number *" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+              <input type="email" id="eq-email" placeholder="Email Address *" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <select id="eq-type" class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+                <option value="Litigation">Litigation Assignment</option>
+                <option value="Non-Litigation">Non-Litigation Assignment</option>
+              </select>
+              <select id="eq-matter" class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+                <option value="Banking / NBFC">Banking / NBFC</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Title Search">Title Search / Due Diligence</option>
+                <option value="Mortgage">Mortgage Documentation</option>
+                <option value="Recovery / DRT">Recovery / DRT / SARFAESI</option>
+                <option value="Property / Revenue">Property / Revenue / RERA</option>
+                <option value="Corporate Retainership">Corporate Retainership</option>
+                <option value="Empanelment">Empanelment</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div>
-              <input type="tel" id="eq-phone" placeholder="Phone +91" required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-4 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition">
+              <textarea id="eq-msg" rows="3" placeholder="Brief Matter Description..." required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-3.5 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition resize-none"></textarea>
             </div>
-            <div>
-              <textarea id="eq-msg" rows="4" placeholder="Matter: Civil / Family / Banking / Insurance / Reclaim / DRT / SARFAESI..." required class="w-full bg-[#FAFBFC] border border-gray-200 rounded-xl p-4 text-sm text-[#0A1931] focus:outline-none focus:border-[#0A1931] transition resize-none"></textarea>
+            <div class="flex gap-3">
+              <button type="submit" class="flex-1 bg-[#0A1931] text-white font-extrabold py-3.5 rounded-xl hover:bg-[#12264d] transition shadow-lg text-xs uppercase tracking-wide">
+                SEND ENQUIRY
+              </button>
+              <a href="https://wa.me/919726659090" target="_blank" class="bg-[#25D366] text-white font-extrabold px-6 py-3.5 rounded-xl hover:bg-[#1ebe57] transition text-xs uppercase tracking-wide flex items-center justify-center">
+                WHATSAPP
+              </a>
             </div>
-            <button type="submit" class="w-full bg-[#0A1931] text-white font-extrabold py-4 rounded-xl hover:bg-[#12264d] transition shadow-lg flex items-center justify-center gap-2 text-sm tracking-wide">
-              Send via WhatsApp <span>→</span>
-            </button>
             <p class="text-[11px] text-center text-gray-400">By submitting, you agree to our BCI compliant disclaimer. No solicitation.</p>
           </form>
         </div>
 
         <!-- Partners Footer Mini Cards -->
         <div class="grid grid-cols-2 gap-4 pt-6 border-t border-gray-100">
-          <!-- Partner 1 Mini Card -->
           <div class="flex items-center gap-3 p-3 rounded-xl bg-[#FAFBFC] border border-gray-100">
             <img src="image/bhupatdan.jpg" alt="Bhupatdan Gadhavi" class="w-10 h-10 rounded-full object-cover object-top shrink-0 border border-gray-200">
             <div class="overflow-hidden">
               <h5 class="font-bold text-[#0A1931] text-xs truncate">Bhupatdan Gadhavi</h5>
-              <p class="text-[10px] text-gray-500 truncate">Civil & Family • G/81/2004</p>
+              <p class="text-[10px] text-gray-500 truncate">Practice Focus: Banking, DRT</p>
             </div>
           </div>
 
-          <!-- Partner 2 Mini Card -->
           <div class="flex items-center gap-3 p-3 rounded-xl bg-[#FAFBFC] border border-gray-100">
             <img src="image/ila1.jpg" alt="Ila Gadhavi" class="w-10 h-10 rounded-full object-cover object-top shrink-0 border border-gray-200">
             <div class="overflow-hidden">
               <h5 class="font-bold text-[#0A1931] text-xs truncate">Ila Gadhavi</h5>
-              <p class="text-[10px] text-gray-500 truncate">Banking • Insurance • Reclaim</p>
+              <p class="text-[10px] text-gray-500 truncate">Practice Focus: Insurance, Recovery</p>
             </div>
           </div>
         </div>
@@ -456,21 +577,46 @@
       </div>
 
     </div>
-
-    <!-- BCI Disclaimer Footer -->
-    <div class="max-w-[1280px] mx-auto mt-12 text-center text-xs text-gray-400">
-      <p class="max-w-3xl mx-auto mb-2"><strong>Disclaimer:</strong> Under the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise.</p>
-      © 2026 Gadhavi Legal Associates. All Rights Reserved.
-    </div>
   </section>
+
+  <!-- 13. FOOTER -->
+  <footer class="bg-[#050D1F] text-slate-300 pt-16 pb-10 border-t border-white/10 text-center">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <h3 class="text-white font-black text-xl mb-2">GADHAVI LEGAL ASSOCIATES</h3>
+      <p class="text-xs text-[#D4AF37] font-semibold tracking-wider uppercase mb-6">
+        Banking • Finance • Insurance • Property • Revenue • RERA • Corporate Legal Services
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/60 mb-8 font-medium">
+        <a href="#contact" class="hover:text-white transition">Institutional Assignments</a> •
+        <a href="#contact" class="hover:text-white transition">Empanelment</a> •
+        <a href="#contact" class="hover:text-white transition">Retainership</a> •
+        <a href="#practice" class="hover:text-white transition">Litigation</a> •
+        <a href="#banking-financial" class="hover:text-white transition">Non-Litigation</a> •
+        <a href="#land-title" class="hover:text-white transition">Title Due Diligence</a> •
+        <a href="#banking-financial" class="hover:text-white transition">Mortgage Documentation</a>
+      </div>
+
+      <div class="text-xs text-white/50 space-y-1 mb-8">
+        <p>Phone: <strong class="text-white">+91 9726659090</strong> | WhatsApp: <strong class="text-white">+91 9726659090</strong></p>
+        <p>Official Email: <strong class="text-white">helpdesk@gadhavilegalassociates.com</strong></p>
+        <p>Office Address: Gujarat High Court Complex, S.G. Highway & Institutional Chambers, Ahmedabad – 380015</p>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 text-[11px] text-white/40 space-y-3">
+        <p class="max-w-3xl mx-auto"><strong>Disclaimer:</strong> Under the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. This website is purely for information purposes.</p>
+        <p>© 2026 Gadhavi Legal Associates. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- AOS Animation Library JS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 900,  // Animation speed (milliseconds)
-      once: false,    // Scroll karte waqt up-down hone par baar-baar animation chalega
-      mirror: true    // Jab aap upar scroll karenge tab bhi animation trigger hoga
+      duration: 900,
+      once: false,
+      mirror: true
     });
   </script>
 
